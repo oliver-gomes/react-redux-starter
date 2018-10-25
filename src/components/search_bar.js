@@ -8,7 +8,10 @@ export default class SearchBar extends Component {
   render() {
     return (
       <div>
-        <input type="text" onChange={this.onInputChange} />
+        <input
+          type="text"
+          onChange={event => console.log(event.target.value)}
+        />
       </div>
     );
   }
